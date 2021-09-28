@@ -1,0 +1,169 @@
+<<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+<style>
+  .primary-pale-blue{
+    background-color: hsl(225, 100%, 94%);
+  }
+  .primary-bright-blue{
+    background-color: hsl(245, 75%, 52%);
+  }
+  .neutral-pale-blue{
+    background-color: hsl(225, 100%, 98%);
+  }
+  .neutral-desaturated-blue{
+    color: hsl(224, 23%, 55%);
+  }
+  .neutral-dark-blue{
+    color: hsl(223, 47%, 23%);
+  }
+
+  body{
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Red Hat Display' , serif;
+  }
+  p{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 60px 5px 60px;
+  }
+  h2{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 900;
+  }
+  h4{
+    font-weight: 900;
+  }
+  .text-center{
+    text-align: center;
+  }
+  #box{
+    resize: none;
+    background-color: white;
+    width: 440px;
+    height: 700px;
+    border: 1px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 0px 20px 30px -15px hsl(224, 23%, 55%);
+
+  }
+  #headphone-girl{
+    margin-right: 200px;
+    width: 440px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  #rectangle{
+    resize: none;
+    background-color: hsl(225, 100%, 98%);
+    width: 375px;
+    height: 95px;
+    border: 1px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  #music-icon{
+    margin: 22px 5px 0px 20px;
+  }
+  #annual-plan{
+    margin: -52px -10px 0px 80px;
+    font-weight: 900;
+  }
+  #change-button{
+    margin-left: 275px;
+  }
+  #price{
+    color: hsl(224, 23%, 55%);
+    margin: -15px 0px -10px 80px;
+  }
+  #description{
+    margin-bottom: 50px;
+  }
+  #purple-rectangle{
+    resize: none;
+    background-color: hsl(245, 75%, 52%);
+    width: 375px;
+    height: 50px;
+    border: 1px;
+    border-radius: 10px;
+    margin: 50px 32px 0px 32px;
+    text-decoration: none;
+    text-decoration-color: none;
+  }
+  #payment-text{
+    font-weight: 900;
+    color: white;
+    position: relative;
+    bottom: -14px;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: none;
+  }
+  #cancel{
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: none;
+  }
+  a:link{
+    text-decoration: none;
+  }
+  a:visited{
+    text-decoration: none;
+  }
+</style>
+
+<body class='primary-pale-blue'>
+  <div id='box'>
+   
+    <img id='headphone-girl' src='./images/illustration-hero.svg' alt='Person listening to music.'>
+
+    <h2 class='neutral-dark-blue' class='text-center'>Order Summary</h2>
+   
+    <p id='description' class='neutral-desaturated-blue text-center'>
+    You can now listen to millions of songs, audiobooks, and podcasts on any 
+    device anywhere you like!
+    </p>
+  
+    <div id='rectangle'>
+      <img id='music-icon' src='./images/icon-music.svg' alt='Music Icon'>
+      <h4 id='annual-plan' class='neutral-dark-blue'>Annual Plan</h4>
+      <a id='change-button' href='#'>Change</a>
+      <p id="price">$59.99/year</p>
+    </div>
+    
+    <a href='#' id='button'>
+      <div id='purple-rectangle'>
+        <p id='payment-text'>Proceed to Payment</p>
+      </div>
+    </a>
+    <a href='#' id='cancel'><h4>Cancel Order</h4></a>
+    </div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/joshua-guillen-4a67a9213">Joshua M Guillen</a>.
+  </div>
+</body>
+</html>
